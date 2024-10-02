@@ -67,12 +67,12 @@ spec:
             httpGet:
               path: /health
               port: 3000
-            initialDelaySeconds: 30   # Adjust the initial delay here
+            initialDelaySeconds: 120   # Adjust the initial delay here
           readinessProbe:
             httpGet:
               path: /ready
               port: 3000
-            initialDelaySeconds: 30   # Adjust the initial delay here
+            initialDelaySeconds: 120   # Adjust the initial delay here
 
 ---
 apiVersion: v1
